@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+:root{
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white : hsla(0, 0%, 100%, 0.75); /*(paragraphs) */
+--Very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+
+*{
+    padding: 0;
+    font-size: 15px;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 800px;
+}
+
+.sedans{
+    background-color: var(--Bright-orange);
+    padding: 50px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+   
+}
+
+.suvs{
+    background-color: var(--Dark-cyan);
+    padding: 50px;
+}
+
+.luxury{
+    background-color: var(--Very-dark-cyan);
+    padding: 50px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.imagem{
+    margin: 40px;
+}
+.titulo{
+    margin: 10px 0;
+    color: var(--Very-light-gray);
+    font-size: 3em;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 2.5em;
+}
+
+.descricao{
+    margin: 20px 0;
+    color: var(--Transparent-white);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+}
+
+.btn{
+    margin: 20px 0;
+    padding: 13px 20px;
+    border-radius: 25px;
+    border: none;
+    font-family: "Lexend Deca", sans-serif;
+    cursor: pointer;
+}
+
+.sedans .btn {
+    color: var(--Bright-orange);
+}
+
+.suvs .btn {
+    color: var(--Dark-cyan);
+}
+
+.luxury .btn {
+    color: var(--Very-dark-cyan);
+}
+
+.btn:hover{
+    background-color: var(--Transparent-white);
+}
+
+@media (max-width: 800px) {
+    body{
+        align-items: flex-start;
+    }
+
+    .principal-container{
+        display: block;
+        max-width: 350px;
+    }
+}
